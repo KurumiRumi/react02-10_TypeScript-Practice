@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { Todo } from "./Todo";
+import { Text } from "./Text";
 import { TodoType } from "./types/todo";
 import "./styles.css";
 
@@ -20,6 +21,7 @@ export default function App() {
       <p>「npx create-react-app my-app --template typescript」</p>
       <p>Typescriptを使ったReactアプリのひな形作成コマンド</p>
 
+      <Text color="red" fontSize="18px" />
       <button onClick={onClickFetchData}>データ取得</button>
       {todos.map((todo) => (
         <Todo
